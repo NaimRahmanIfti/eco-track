@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcoTrack – Log Your Day</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>EcoTrack Daily Logger</h1>
+    <form action="/submit" method="POST">
+        <label>Transport:</label>
+        <select name="transport">
+            <option value="car">Car</option>
+            <option value="bus">Bus</option>
+            <option value="bike">Bike</option>
+            <option value="walk">Walk</option>
+        </select><br><br>
+
+        <label>Energy Use:</label>
+        <select name="energy">
+            <option value="high">High</option>
+            <option value="moderate">Moderate</option>
+            <option value="low">Low</option>
+        </select><br><br>
+
+        <label>Diet:</label>
+        <select name="diet">
+            <option value="meat">Meat-heavy</option>
+            <option value="mixed">Mixed</option>
+            <option value="veg">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
